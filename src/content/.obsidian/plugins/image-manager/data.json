@@ -1,7 +1,7 @@
 {
   "enableRenameOnPaste": true,
   "enableRenameOnDrop": true,
-  "imageNameTemplate": "",
+  "imageNameTemplate": "{{fileName}}",
   "attachmentLocation": "obsidian",
   "customAttachmentPath": "./assets",
   "defaultProvider": "unsplash",
@@ -13,11 +13,11 @@
   "defaultOrientation": "any",
   "defaultImageSize": "large",
   "enablePropertyPaste": true,
-  "propertyLinkFormat": "path",
+  "propertyLinkFormat": "obsidian",
   "customPropertyLinkFormat": "{image-url}",
   "defaultPropertyName": "image",
   "defaultIconPropertyName": "icon",
-  "altTextProperty": "imageAlt",
+  "altTextProperty": "",
   "autoConvertRemoteImages": false,
   "convertOnNoteOpen": false,
   "convertOnNoteSave": false,
@@ -29,22 +29,19 @@
   "disableRenameNotice": false,
   "enableDescriptiveImages": true,
   "insertSize": "",
-  "insertReferral": false,
+  "insertReferral": true,
   "insertBackLink": false,
   "appendReferral": false,
   "banner": {
     "properties": {
       "imageProperty": "image",
-      "iconProperty": "icon",
-      "hidePropertyEnabled": false,
-      "hideProperty": ""
+      "iconProperty": "icon"
     },
     "desktop": {
       "enabled": true,
       "height": 240,
       "viewOffset": 0,
       "noteOffset": -32,
-      "bannerRadiusEnabled": false,
       "borderRadius": [
         8,
         8,
@@ -53,7 +50,6 @@
       ],
       "padding": 8,
       "fade": true,
-      "animation": false,
       "iconEnabled": false,
       "iconSize": 96,
       "iconRadius": 8,
@@ -70,7 +66,6 @@
       "height": 190,
       "viewOffset": 0,
       "noteOffset": -32,
-      "bannerRadiusEnabled": false,
       "borderRadius": [
         8,
         8,
@@ -79,7 +74,6 @@
       ],
       "padding": 8,
       "fade": true,
-      "animation": false,
       "iconEnabled": false,
       "iconSize": 96,
       "iconRadius": 8,
@@ -96,7 +90,6 @@
       "height": 160,
       "viewOffset": 0,
       "noteOffset": -32,
-      "bannerRadiusEnabled": false,
       "borderRadius": [
         8,
         8,
@@ -105,7 +98,6 @@
       ],
       "padding": 8,
       "fade": true,
-      "animation": false,
       "iconEnabled": false,
       "iconSize": 56,
       "iconRadius": 8,

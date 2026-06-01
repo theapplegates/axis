@@ -70,7 +70,7 @@
       "displayName": "Editing Toolbar: Hide/Show ",
       "mode": "desktop",
       "toggleIcon": "lucide-panel-top-close",
-      "showOnFileTypes": "md"
+      "showOnFileTypes": "md,mdx"
     }
   ],
   "statusBarItems": [
@@ -165,7 +165,7 @@
     {
       "id": "native-collapseAll",
       "name": "Collapse all",
-      "ariaLabel": "Collapse all",
+      "ariaLabel": "Expand all",
       "type": "native",
       "hidden": false
     },

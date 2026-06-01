@@ -1,7 +1,8 @@
 defaultView: Posts
 filters:
-  and:
+  or:
     - file.ext == "md"
+    - file.ext == "mdx"
 formulas:
   Slug: |-
     (
@@ -79,6 +80,27 @@ views:
     draftStatusProperty: note.draft
     draftStatusReverse: false
   - type: cms
+    name: Articles
+    filters:
+      and:
+        - file.folder.startsWith("articles")
+    sort:
+      - property: file.ctime
+        direction: DESC
+    imageFormat: cover
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: articles
+    fallbackToEmbeds: if-empty
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: above
+    titleProperty: file.fullname
+    titlePropertyNested: file.fullname
+    dateProperty: file.ctime
+    showTags: false
+    showDraftStatus: false
+  - type: cms
     name: Docs
     filters:
       and:
@@ -106,6 +128,27 @@ views:
     draftStatusReverse: false
     imageProperty: note.image
   - type: cms
+    name: Guides
+    filters:
+      and:
+        - file.folder.startsWith("guides")
+    sort:
+      - property: file.ctime
+        direction: DESC
+    imageFormat: cover
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: guides
+    fallbackToEmbeds: if-empty
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: above
+    titleProperty: file.fullname
+    titlePropertyNested: file.fullname
+    dateProperty: file.ctime
+    showTags: false
+    showDraftStatus: false
+  - type: cms
     name: Pages
     filters:
       and:
@@ -128,6 +171,27 @@ views:
     showDraftStatus: true
     draftStatusProperty: note.draft
     draftStatusReverse: false
+  - type: cms
+    name: Podcasts
+    filters:
+      and:
+        - file.folder.startsWith("podcasts")
+    sort:
+      - property: file.ctime
+        direction: DESC
+    imageFormat: cover
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: podcasts
+    fallbackToEmbeds: if-empty
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: above
+    titleProperty: file.fullname
+    titlePropertyNested: file.fullname
+    dateProperty: file.ctime
+    showTags: false
+    showDraftStatus: false
   - type: cms
     name: Projects
     filters:
@@ -174,11 +238,32 @@ views:
     showTags: false
     showDraftStatus: false
   - type: cms
+    name: Tools
+    filters:
+      and:
+        - file.folder.startsWith("tools")
+    sort:
+      - property: file.ctime
+        direction: DESC
+    imageFormat: cover
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: tools
+    fallbackToEmbeds: if-empty
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: above
+    titleProperty: file.fullname
+    titlePropertyNested: file.fullname
+    dateProperty: file.ctime
+    showTags: false
+    showDraftStatus: false
+  - type: cms
     name: All Content
     filters:
       and:
-        - '!file.folder.startsWith("redirects")'
-        - '!file.folder.startsWith("tags")'
+        - file.folder.startsWith("redirects")
+        - file.folder.startsWith("tags")
     groupBy:
       property: formula.Content Folder
       direction: ASC

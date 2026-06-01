@@ -3,6 +3,15 @@
   "configFilePath": "../config.ts",
   "contentTypes": [
     {
+      "id": "content-type-1774068615191-0cnb6f",
+      "name": "Articles",
+      "folder": "articles",
+      "fileOrganization": "folder",
+      "indexFileName": "index",
+      "linkBasePath": "/articles/",
+      "enabled": true
+    },
+    {
       "id": "content-type-1772132371352-eyu7owcpz",
       "name": "Docs",
       "folder": "docs",
@@ -12,6 +21,15 @@
       "linkBasePath": "/docs/"
     },
     {
+      "id": "content-type-1774114724830-069fcf",
+      "name": "Guides",
+      "folder": "guides",
+      "fileOrganization": "folder",
+      "indexFileName": "index",
+      "linkBasePath": "/guides/",
+      "enabled": true
+    },
+    {
       "id": "content-type-1772132371352-r31lvw75i",
       "name": "Pages",
       "folder": "pages",
@@ -19,6 +37,15 @@
       "enabled": true,
       "indexFileName": "index",
       "linkBasePath": "/"
+    },
+    {
+      "id": "content-type-1774068077657-u6s0dn",
+      "name": "Podcasts",
+      "folder": "podcasts",
+      "fileOrganization": "folder",
+      "indexFileName": "index",
+      "linkBasePath": "/podcasts/",
+      "enabled": true
     },
     {
       "id": "content-type-1772132371352-lncamio0p",
@@ -62,6 +89,15 @@
       "fileOrganization": "file",
       "enabled": false,
       "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1774114263351-wk7p4f",
+      "name": "Tools",
+      "folder": "tools",
+      "fileOrganization": "folder",
+      "indexFileName": "index",
+      "linkBasePath": "/tools/",
+      "enabled": true
     }
   ],
   "frontmatterProperties": {
@@ -72,7 +108,7 @@
       "draftProperty": "draft",
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ncategory: \"\"\norder: \nversion: \"\"\nlastModified: {{date}}\nimage: \"\"\nimageAlt: \"\"\nhideCOverImage: false\ndraft: true\nfeatured: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\nlastModified: {{date}}\ndescription: \"\"\ncategory: \"\"\norder: 0\nversion: \"\"\nupdated: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\ndraft: true\nfeatured: \"\"\n---\n"
     },
     "content-type-1772132371352-r31lvw75i": {
       "titleProperty": "title",
@@ -80,7 +116,7 @@
       "draftProperty": "draft",
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nupdated: \nshowUpdated: false\nhideTOC: false\nnoindex: false\ndraft: true\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nupdated: \"\"\nshowUpdated: false\nhideTOC: false\nnoIndex: false\ndraft: true\n---\n"
     },
     "content-type-1772132371352-lncamio0p": {
       "titleProperty": "title",
@@ -91,7 +127,7 @@
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\npublished: {{date}}\nupdated: \ndescription: \"\"\ntags: []\ndraft: true\nimage: \"\"\nimageAlt: \"\"\nhideTOC: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\npublished: {{date}}\nupdated: \"\"\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\nhideLocalGraph: false\nkeyword: \"\"\ndraft: true\nredirects: \"\"\n---\n"
     },
     "content-type-1772132371352-s44hdhzm0": {
       "titleProperty": "title",
@@ -101,21 +137,37 @@
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ndate: {{date}}\ncategories: []\nrepositoryUrl: \"\"\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ncategories: []\nrepositoryUrl: \"\"\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: false\n---\n"
     },
     "content-type-1772132371352-9m60i2o40": {
       "titleProperty": "title",
       "descriptionProperty": "description",
       "hasDraftStatus": false,
       "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nupdated: \"\"\n---\n"
+    },
+    "content-type-1774068615191-0cnb6f": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
+    },
+    "content-type-1774114724830-069fcf": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
+    },
+    "content-type-1774068077657-u6s0dn": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
+    },
+    "content-type-1774114263351-wk7p4f": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
     }
   },
   "attachmentHandlingMode": "same-folder",
   "preset": "vanilla",
   "presetName": "",
   "presetsRepo": "davidvkimball/vault-cms-presets",
-  "enableEditingToolbar": false,
-  "enableExtendedFileTypes": false,
+  "enableEditingToolbar": true,
+  "enableExtendedFileTypes": true,
   "enabledPlugins": [
     "astro-composer",
     "bases-cms",
@@ -130,7 +182,9 @@
     "explorer-focus",
     "settings-search",
     "tag-wrangler",
-    "zenmode"
+    "zenmode",
+    "file-name-history",
+    "vault-nickname"
   ],
   "disabledPlugins": [],
   "theme": "",
@@ -138,20 +192,122 @@
     "views": []
   },
   "astroComposerConfig": {
-    "customContentTypes": [],
-    "defaultTemplate": "",
-    "configFilePath": "",
-    "terminalProjectRootPath": ""
+    "customContentTypes": [
+      {
+        "id": "content-type-1772132371352-lncamio0p",
+        "name": "Posts",
+        "folder": "posts",
+        "template": "---\ntitle: \"{{title}}\"\npublished: {{date}}\nupdated: \"\"\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\nhideLocalGraph: false\nkeyword: \"\"\ndraft: true\nredirects: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/posts/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1774068615191-0cnb6f",
+        "name": "Articles",
+        "folder": "articles",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/articles/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1772132371352-eyu7owcpz",
+        "name": "Docs",
+        "folder": "docs",
+        "template": "---\ntitle: \"{{title}}\"\nlastModified: {{date}}\ndescription: \"\"\ncategory: \"\"\norder: 0\nversion: \"\"\nupdated: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\ndraft: true\nfeatured: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/docs/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1774114724830-069fcf",
+        "name": "Guides",
+        "folder": "guides",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/guides/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1772132371352-r31lvw75i",
+        "name": "Pages",
+        "folder": "pages",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nupdated: \"\"\nshowUpdated: false\nhideTOC: false\nnoIndex: false\ndraft: true\n---\n",
+        "enabled": true,
+        "linkBasePath": "/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1774068077657-u6s0dn",
+        "name": "Podcasts",
+        "folder": "podcasts",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/podcasts/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1772132371352-s44hdhzm0",
+        "name": "Projects",
+        "folder": "projects",
+        "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ncategories: []\nrepositoryUrl: \"\"\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: false\n---\n",
+        "enabled": true,
+        "linkBasePath": "/projects/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1772132371352-9m60i2o40",
+        "name": "Special Pages",
+        "folder": "special",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nupdated: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1774114263351-wk7p4f",
+        "name": "Tools",
+        "folder": "tools",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/tools/",
+        "creationMode": "folder",
+        "indexFileName": "index"
+      }
+    ],
+    "defaultTemplate": "---\ntitle: \"{{title}}\"\npublished: {{date}}\nupdated: \"\"\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\nhideLocalGraph: false\nkeyword: \"\"\ndraft: true\nredirects: \"\"\n---\n",
+    "configFilePath": "../config.ts",
+    "terminalProjectRootPath": "../..",
+    "showMdxFilesInExplorer": true,
+    "postsFolder": "posts",
+    "postsCreationMode": "folder",
+    "postsIndexFileName": "index",
+    "syncDraftDate": true,
+    "draftDetectionMode": "property",
+    "draftProperty": "draft",
+    "draftLogic": "true-is-draft",
+    "publishDateField": "published"
   },
   "seoConfig": {
     "titleProperty": "title",
+    "descriptionProperty": "description",
     "scanDirectories": "posts",
     "useFilenameAsTitle": false,
     "useFilenameAsSlug": true,
-    "enableMDXSupport": false
+    "enableMDXSupport": true
   },
   "propertyOverFileName": {
-    "propertyKey": "title"
+    "propertyKey": "title",
+    "enableMdxSupport": true
   },
   "imageManager": {
     "enableRenameOnPaste": true,
@@ -302,7 +458,12 @@
     "hideReleaseNotes": false,
     "stickyIconReplaceTab": false
   },
-  "explorerFocus": {},
+  "explorerFocus": {
+    "showRightClickMenu": true,
+    "showFileExplorerIcon": true,
+    "focusLevel": "parent",
+    "hideAncestorFolders": false
+  },
   "ignoreConfig": {
     "gitIgnoreConfigured": true,
     "viteIgnoreConfigured": true
@@ -311,10 +472,13 @@
     "enabled": false,
     "isPrivate": true,
     "branchName": "main",
-    "autoConfigureObsidianGit": true
+    "autoConfigureObsidianGit": true,
+    "repoName": "axis-obsidian"
   },
+  "deploymentPlatform": "",
+  "resolvePublicImages": false,
   "runWizardOnStartup": false,
   "wizardCompleted": true,
-  "enableMdxSupport": false,
+  "enableMdxSupport": true,
   "defaultContentTypeId": "content-type-1772132371352-lncamio0p"
 }
