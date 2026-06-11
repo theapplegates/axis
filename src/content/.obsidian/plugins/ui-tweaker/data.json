@@ -76,7 +76,7 @@
   "statusBarItems": [
     {
       "id": "plugin-editor-status;1",
-      "name": "plugin-editor-status",
+      "name": "Live Preview",
       "type": "existing",
       "hidden": false,
       "mdOnly": false,
@@ -130,6 +130,20 @@
       "type": "existing",
       "hidden": false,
       "mdOnly": false
+    },
+    {
+      "id": "plugin-obsidian-git-status;2",
+      "name": "Uninitialized",
+      "type": "existing",
+      "hidden": false,
+      "mdOnly": false
+    },
+    {
+      "id": "plugin-sync;1",
+      "name": "Connecting to server",
+      "type": "existing",
+      "hidden": false,
+      "mdOnly": false
     }
   ],
   "explorerCommands": [],
@@ -165,7 +179,7 @@
     {
       "id": "native-collapseAll",
       "name": "Collapse all",
-      "ariaLabel": "Expand all",
+      "ariaLabel": "Collapse all",
       "type": "native",
       "hidden": false
     },

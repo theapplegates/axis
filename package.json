@@ -2,6 +2,9 @@
   "name": "axis",
   "type": "module",
   "version": "1.1.6",
+  "resolutions": {
+    "vite": "^7.0.0"
+  },
   "description": "Axis - a premium Astro theme for personal publishing. Vault CMS-native.",
   "scripts": {
     "dev": "node -e \"require('fs').rmSync('.astro',{recursive:true,force:true})\" && node scripts/sync-images.js && node scripts/generate-graph-data.js && astro dev",
@@ -24,6 +27,7 @@
     "@fortawesome/free-brands-svg-icons": "^7.2.0",
     "@justinribeiro/lite-youtube": "^1.9.0",
     "@resvg/resvg-js": "^2.6.2",
+    "vite": "^7.3.2",
     "astro": "7.0.0-alpha.0",
     "clsx": "^2.1.1",
     "d3": "^7.9.0",

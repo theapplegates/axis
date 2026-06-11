@@ -17,3 +17,4 @@ redirects: ""
 ---
 This my first note. I am not sure what to write.
 This is more of a test.
+Test 2
