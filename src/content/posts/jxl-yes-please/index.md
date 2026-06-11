@@ -6,7 +6,7 @@ description: Say hi to .jxl
 tags:
   - Image
   - Responsive
-image: ""
+image: the-globe.jpg
 imageAlt: ""
 imageOG: false
 hideCoverImage: false
@@ -16,4 +16,6 @@ keyword: Image
 draft: false
 redirects: ""
 ---
+
+
 With the help of AI ( and help in this case is 99.9% of the workl)
